@@ -21,6 +21,9 @@ class FirstPage extends StatelessWidget {
               leading: Icon(Icons.home),
               title: Text("H O M E"),
               onTap: () {
+                // pop drawer first
+                Navigator.pop(context);
+                
                 // go to home page
                 Navigator.pushNamed(context, '/homepage');
               },
@@ -44,3 +47,4 @@ class FirstPage extends StatelessWidget {
     );
   }
 }
+
